@@ -11,6 +11,7 @@ class Unit extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'name'
+        'name',
+        'symbol',
     ];
 }
