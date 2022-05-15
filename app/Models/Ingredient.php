@@ -11,4 +11,8 @@ class Ingredient extends Model
     use SoftDeletes;
 
     protected $fillable = [];
+
+    public function unit() {
+        return $this->belongsTo(Unit::class);
+    }
 }
